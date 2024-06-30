@@ -12,7 +12,7 @@ if not cap.isOpened():
 model = tf.keras.models.load_model('model.keras')
 
 def preprocess_image(frame):
-    image = cv2.resize(frame, (256, 256)) 
+    image = cv2.resize(frame, (128, 128)) 
     
     # plt.imshow(image)
     # plt.show()
